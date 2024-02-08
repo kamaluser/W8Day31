@@ -68,7 +68,7 @@ static void CreatePerson(List<Person> personList)
     {
         Console.Write("Age: ");
         ageStr = Console.ReadLine();
-    } while (!int.TryParse(ageStr, out age));
+    } while (!int.TryParse(ageStr, out age) || age<0);
 
     Person newPerson = new Person(fullname, age);
     personList.Add(newPerson);
