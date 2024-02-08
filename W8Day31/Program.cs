@@ -15,13 +15,9 @@ if (!fileInfo.Exists)
         var fs = fileInfo.Create();
         fs.Close();
     }
-    else if (str == "n")
-    {
-        return;
-    }
     else
     {
-        Console.WriteLine("Invalid Choice"); ;
+        return;
     }
 }
 
